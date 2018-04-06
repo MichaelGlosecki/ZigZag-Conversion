@@ -5,6 +5,9 @@ import java.util.Queue;
 
 class Solution {
     public String convert(String s, int numRows) {
+        if (numRows <= 1) {
+            return s;
+        }
         List<Queue<Character>> arrayListOfQueues = new ArrayList<>();
         StringBuilder zigzagString = new StringBuilder();
 
